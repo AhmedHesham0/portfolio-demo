@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Custom Glow Cursor -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header class="header" id="home">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <h1 class="header-title">
+        <span class="title-line">Build.</span>
+        <span class="title-line">Create.</span>
+        <span class="title-line accent">Ship.</span>
+      </h1>
+      <p class="header-subtitle">Crafting digital experiences that stand out.</p>
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- My Projects - Carousel -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal-down">My Projects</h2>
+      <p class="section-subtitle reveal-up">A selection of recent work</p>
+      <div class="carousel-wrapper reveal-scale">
+        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <div class="video-card">
+                <div class="video-wrapper">
+                  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project 1" allowfullscreen></iframe>
+                </div>
+                <h3>Project One</h3>
+                <p>Short description of the first project.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="video-card">
+                <div class="video-wrapper">
+                  <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Project 2" allowfullscreen></iframe>
+                </div>
+                <h3>Project Two</h3>
+                <p>Short description of the second project.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="video-card">
+                <div class="video-wrapper">
+                  <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Project 3" allowfullscreen></iframe>
+                </div>
+                <h3>Project Three</h3>
+                <p>Short description of the third project.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="video-card">
+                <div class="video-wrapper">
+                  <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Project 4" allowfullscreen></iframe>
+                </div>
+                <h3>Project Four</h3>
+                <p>Short description of the fourth project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title reveal-down">About</h2>
+      <p class="section-subtitle reveal-up">Who I am and what I do</p>
+      <div class="about-content">
+        <div class="about-text reveal-left">
+          <p>I'm a creator focused on building clean, fast, and memorable digital experiences. From concept to launch, I care about every detail.</p>
+          <p>Whether it's web apps, motion design, or interactive experiences—I'm here to bring ideas to life.</p>
+          <a href="#contact" class="btn btn-outline">Let's talk</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-card reveal-right" data-tilt>
+            <span class="about-stat">5+</span>
+            <span>Years Experience</span>
+          </div>
+          <div class="about-card reveal-right" data-tilt style="transition-delay: 0.2s;">
+            <span class="about-stat">50+</span>
+            <span>Projects Delivered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title reveal-down">Testimonials</h2>
+      <p class="section-subtitle reveal-up">What people say</p>
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal-scale" data-tilt>
+          <div class="testimonial-quote">"</div>
+          <p>Outstanding work from start to finish. Delivered on time and exceeded our expectations. Highly recommend.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div>
+              <strong>Jane Doe</strong>
+              <span>CEO, TechCo</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card reveal-scale" data-tilt>
+          <div class="testimonial-quote">"</div>
+          <p>Creative, responsive, and a pleasure to work with. The final product was exactly what we envisioned.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">M</div>
+            <div>
+              <strong>Mike Smith</strong>
+              <span>Founder, StartupX</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card reveal-scale" data-tilt>
+          <div class="testimonial-quote">"</div>
+          <p>Professional and talented. Brought our ideas to life with attention to detail and clean code.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <strong>Sarah Lee</strong>
+              <span>Product Lead, Design Co</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal-down">Contact Us</h2>
+      <p class="section-subtitle reveal-up">Get in touch — I'd love to hear from you</p>
+      <div class="contact-content">
+        <form class="contact-form reveal-up" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send message</button>
+        </form>
+        <div class="contact-info reveal-left">
+          <p>Prefer email? Reach me at <a href="mailto:hello@example.com">hello@example.com</a></p>
+          <div class="contact-links">
+            <a href="#" class="contact-link" aria-label="Twitter">Twitter</a>
+            <a href="#" class="contact-link" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" class="contact-link" aria-label="GitHub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">Portfolio</a>
+        <p>Building digital experiences.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; <span id="year"></span> Portfolio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VanillaTilt CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
